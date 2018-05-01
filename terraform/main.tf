@@ -54,10 +54,10 @@ EOF
 
 }
 
-resource "google_compute_instance_group_manager" "Staging" {
-  name               = "Staging"
+resource "google_compute_instance_group_manager" "staging" {
+  name               = "staging"
   instance_template  = "${google_compute_instance_template.staging-run.self_link}"
-  base_instance_name = "Staging"
+  base_instance_name = "staging"
   zone               = "us-central1-a"
 
 
