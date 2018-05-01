@@ -1,6 +1,6 @@
 # comp698-final
 made by Travis Deschenes
-
+test commit
 Why use git? Git is a useful tool for managing repoitories. 
 
 Why write an application in golang? It's a lightwheigh and fast language for applicatoins.
