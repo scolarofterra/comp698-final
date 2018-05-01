@@ -10,8 +10,8 @@ provider "google" {
   project = "comp698-tdd1007"
 }
 
-resource "google_compute_instance_template" "Staging-run" {
-  name_prefix  = "Stagingrun-"
+resource "google_compute_instance_template" "staging-run" {
+  name_prefix  = "stagingrun-"
   machine_type = "f1-micro"
   region       = "us-central1"
   tags = ["http-server"]
@@ -56,7 +56,7 @@ EOF
 
 resource "google_compute_instance_group_manager" "Staging" {
   name               = "Staging"
-  instance_template  = "${google_compute_instance_template.Staging-run.self_link}"
+  instance_template  = "${google_compute_instance_template.staging-run.self_link}"
   base_instance_name = "Staging"
   zone               = "us-central1-a"
 
