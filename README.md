@@ -18,3 +18,6 @@ Why use bash commands vs clicking through UI? give's you a better scope on what 
 Why docker vs installing application directly on the host? Docker is easyeir and a better way to run it for automatoin.
 
 What protections are there against accidentally introducing bad code into production? Travis CI testing as well as the ability to revert comits if needed.
+
+
+I followed the instructoins for the assianment and the only problem was when the google account was dissabled.
